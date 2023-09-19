@@ -1,0 +1,128 @@
+:root{
+    --paleblue: hsl(225, 100%, 94%);
+    --brightblue: hsl(245, 75%, 52%);
+    --verypaleblue: hsl(225, 100%, 98%);
+    --desaturatedblue: hsl(224, 23%, 55%);
+    --darkblue: hsl(223, 47%, 23%);
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: var(--paleblue);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.mainCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.illustration-hero{
+    max-width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.header{
+    width: 80%;
+}
+
+#heading{
+    font-weight: 900;
+    color: var(--darkblue);
+    margin-top: 35px;
+    font-size: 35px;
+}
+
+.content{
+    color: var(--desaturatedblue);
+    margin-top: 15px;
+}
+.buyMe{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--verypaleblue);
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.buy{
+    width: 90%;
+    background-color: var(--brightblue);
+    color: var(--verypaleblue);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    font-weight: 700;
+    
+}
+
+
+.duration{
+    color: var(--darkblue);
+    font-weight: 900;
+}
+
+.fee{
+    color: var(--desaturatedblue)
+}
+
+.price{
+    margin-right: auto;
+    margin-left: 25px;
+}
+
+.change{
+    color: var(--darkblue);
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.cancel{
+    color: var(--desaturatedblue);
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.buy:hover{
+    background-color: color-mix(in srgb, var(--brightblue) 80%, white);
+    color: var(--verypaleblue)
+}
+
+.cancel:hover{
+    color: var(--darkblue)
+}
+
+.change:hover{
+    color: color-mix(in srgb, var(--darkblue) 70%, white);
+    text-decoration: none;
+}
+
+@media (max-width: 470px) {
+    .mainCard{
+        width: 350px;
+    }
+}
